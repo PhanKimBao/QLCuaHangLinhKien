@@ -1,6 +1,6 @@
 ﻿namespace QLLKDT
 {
-    public partial class BaoCao
+    public partial class NhapHang
     {
     }
 }
