@@ -45,20 +45,10 @@
     <None Include="packages.config" />
     <Content Include="Site.Master" />
     <Content Include="TongQuan.aspx" />
-    <Content Include="BanHang.aspx" />
-    <Content Include="SanPham.aspx" />
-    <Content Include="DanhMuc.aspx" />
-    <Content Include="HoaDon.aspx" />
-    <Content Include="BaoHanh.aspx" />
-    <Content Include="BaoCao.aspx" />
-    <Content Include="NhapHang.aspx" />
     <Content Include="TaiKhoan.aspx" />
     <Content Include="PhanQuyen.aspx" />
     <Content Include="CaiDat.aspx" />
     <Content Include="SaoLuu.aspx" />
-    <Content Include="NhanVien.aspx" />
-    <Content Include="KhachHang.aspx" />
-    <Content Include="NhaCungCap.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="Default.aspx" />
@@ -97,55 +87,6 @@
     <Compile Include="TongQuan.aspx.designer.cs">
       <DependentUpon>TongQuan.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BanHang.aspx.cs">
-      <DependentUpon>BanHang.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BanHang.aspx.designer.cs">
-      <DependentUpon>BanHang.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SanPham.aspx.cs">
-      <DependentUpon>SanPham.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SanPham.aspx.designer.cs">
-      <DependentUpon>SanPham.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DanhMuc.aspx.cs">
-      <DependentUpon>DanhMuc.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DanhMuc.aspx.designer.cs">
-      <DependentUpon>DanhMuc.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="HoaDon.aspx.cs">
-      <DependentUpon>HoaDon.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="HoaDon.aspx.designer.cs">
-      <DependentUpon>HoaDon.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="BaoHanh.aspx.cs">
-      <DependentUpon>BaoHanh.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BaoHanh.aspx.designer.cs">
-      <DependentUpon>BaoHanh.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="BaoCao.aspx.cs">
-      <DependentUpon>BaoCao.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BaoCao.aspx.designer.cs">
-      <DependentUpon>BaoCao.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NhapHang.aspx.cs">
-      <DependentUpon>NhapHang.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NhapHang.aspx.designer.cs">
-      <DependentUpon>NhapHang.aspx</DependentUpon>
-    </Compile>
     <Compile Include="TaiKhoan.aspx.cs">
       <DependentUpon>TaiKhoan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -173,27 +114,6 @@
     </Compile>
     <Compile Include="SaoLuu.aspx.designer.cs">
       <DependentUpon>SaoLuu.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NhanVien.aspx.cs">
-      <DependentUpon>NhanVien.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NhanVien.aspx.designer.cs">
-      <DependentUpon>NhanVien.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="KhachHang.aspx.cs">
-      <DependentUpon>KhachHang.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="KhachHang.aspx.designer.cs">
-      <DependentUpon>KhachHang.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NhaCungCap.aspx.cs">
-      <DependentUpon>NhaCungCap.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NhaCungCap.aspx.designer.cs">
-      <DependentUpon>NhaCungCap.aspx</DependentUpon>
     </Compile>
     <Compile Include="Security\Access.cs" />
     <Compile Include="Site.Master.cs">
