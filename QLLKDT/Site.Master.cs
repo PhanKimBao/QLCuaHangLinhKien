@@ -7,7 +7,7 @@ namespace QLLKDT {
   protected string NavHtml="",RoleHtml="",TokenHtml="";
   string current;
   string Link(string key,string icon,string label) {
-   if(!Access.Allowed(key)) return "";
+   if(!Access.Allowed(key=="kho"?"sanpham":key)) return "";
    string url=key=="sanpham"?"Default.aspx":DuongDan.LayTrang(key);
    return "<a class='nav-link "+(current==key?"active":"")+"' href='"+HttpUtility.HtmlAttributeEncode(url)+"'><span class='nav-icon'>"+HttpUtility.HtmlEncode(icon)+"</span>"+HttpUtility.HtmlEncode(label)+"</a>";
   }
@@ -21,12 +21,8 @@ namespace QLLKDT {
    current=DuongDan.ChucNang(Request.Path, Request.QueryString["m"]);
    var nav=new StringBuilder();
    nav.Append(Link("tongquan","⌂","Tổng quan"));
-   nav.Append(Group("⬡","Linh kiện",new[]{"sanpham","danhmuc"},new[]{"Sản phẩm","Danh mục"}));
-   nav.Append(Group("▤","Giao dịch",new[]{"banhang","hoadon","phieunhap","baohanh"},new[]{"Bán hàng","Hóa đơn","Nhập hàng","Bảo hành"}));
-   nav.Append(Group("♧","Đối tác",new[]{"khachhang","nhacungcap","nhanvien"},new[]{"Khách hàng","Nhà cung cấp","Nhân viên"}));
-   nav.Append(Link("baocao","▥","Báo cáo"));
-   nav.Append(Group("♙","Tài khoản",new[]{"taikhoan","phanquyen"},new[]{"Quản lý tài khoản","Phân quyền"}));
-   nav.Append(Group("⚙","Cài đặt hệ thống",new[]{"caidat","backup"},new[]{"Thông tin cửa hàng","Sao lưu dữ liệu"}));
+   nav.Append(Group("⬡","Linh kiện",new[]{"sanpham","danhmuc","kho"},new[]{"Sản phẩm","Danh mục","Tồn kho"}));
+   nav.Append(Group("▤","Nghiệp vụ",new[]{"phieunhap","baohanh","hoadon"},new[]{"Nhập hàng","Bảo hành","Hóa đơn"}));
    NavHtml=nav.ToString();RoleHtml=HttpUtility.HtmlEncode(Access.UserRole());TokenHtml=HttpUtility.HtmlAttributeEncode(Access.Token);
   }
  }

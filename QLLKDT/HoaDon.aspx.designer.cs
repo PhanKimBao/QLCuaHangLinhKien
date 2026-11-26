@@ -1,6 +1,6 @@
 ﻿namespace QLLKDT
 {
-    public partial class BanHang
+    public partial class HoaDon
     {
     }
 }

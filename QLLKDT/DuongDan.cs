@@ -9,20 +9,12 @@ namespace QLLKDT
         private static readonly Dictionary<string, string> Trang = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
         {
             { "tongquan", "TongQuan.aspx" },
-            { "banhang", "BanHang.aspx" },
             { "sanpham", "SanPham.aspx" },
+            { "kho", "Kho.aspx" },
             { "danhmuc", "DanhMuc.aspx" },
             { "hoadon", "HoaDon.aspx" },
             { "baohanh", "BaoHanh.aspx" },
-            { "baocao", "BaoCao.aspx" },
             { "phieunhap", "NhapHang.aspx" },
-            { "taikhoan", "TaiKhoan.aspx" },
-            { "phanquyen", "PhanQuyen.aspx" },
-            { "caidat", "CaiDat.aspx" },
-            { "backup", "SaoLuu.aspx" },
-            { "nhanvien", "NhanVien.aspx" },
-            { "khachhang", "KhachHang.aspx" },
-            { "nhacungcap", "NhaCungCap.aspx" },
         };
         public static string ChucNang(string path, string macDinh)
         {

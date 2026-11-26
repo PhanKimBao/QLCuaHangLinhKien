@@ -139,6 +139,7 @@ namespace QLLKDT
                 return;
             }
             string feature = DuongDan.ChucNang(Request.Path, Request.QueryString["m"]);
+            if (feature == "kho") feature = "sanpham";
             bool allowed;
             try
             {
